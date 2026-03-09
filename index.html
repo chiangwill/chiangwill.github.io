@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will Chiang — Backend & Data Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Background -->
+  <canvas id="canvas-bg"></canvas>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Nav -->
+  <nav id="navbar">
+    <div class="nav-logo">WC.</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="wrapper">
+
+    <!-- Hero -->
+    <section id="hero">
+      <div class="hero-inner">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Available for opportunities
+        </div>
+        <h1>
+          <span class="hero-name-gradient">Will Chiang</span>
+          <span class="hero-typewriter" id="typewriter"><span class="cursor"></span></span>
+        </h1>
+        <p class="hero-desc">
+          Python/Django specialist building scalable backend systems, data pipelines,
+          and LLM-powered workflows. 6+ years turning complex problems into clean code.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.45 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.29 6.29l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Get in touch
+          </a>
+          <a href="https://www.linkedin.com/in/will-chiang-b93789182" target="_blank" class="btn btn-ghost">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+        </div>
+        <div class="hero-scroll">
+          <div class="scroll-line"></div>
+          Scroll to explore
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="section-header reveal">
+        <span class="section-tag">About</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-card-icon">👋</div>
+          <div class="about-card-title">Who I am</div>
+          <p>
+            Backend engineer with a background in <strong>Space Science</strong> — which means I'm comfortable
+            with both ambiguous data and precise engineering. I specialize in <strong>Python/Django systems</strong>
+            and have been bridging traditional backend work with <strong>AI/LLM integration</strong> since before it was trendy.
+          </p>
+        </div>
+        <div class="about-card reveal" style="transition-delay: 0.1s">
+          <div class="about-card-icon">⚙️</div>
+          <div class="about-card-title">Backend & DevOps</div>
+          <p>
+            From building <strong>ERP-like systems</strong> with DRF to setting up
+            <strong>Docker + CI/CD pipelines</strong> that cut deployment time in half.
+            I care about code quality, testing, and systems that actually stay up.
+          </p>
+        </div>
+        <div class="about-card reveal" style="transition-delay: 0.2s">
+          <div class="about-card-icon">🤖</div>
+          <div class="about-card-title">AI & Data</div>
+          <p>
+            Currently architecting <strong>ETL pipelines</strong> and
+            <strong>LLM-powered workflows</strong> at Interview.tw — turning messy
+            unstructured data into structured insights at scale using prompt engineering.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <div class="section-header reveal">
+        <span class="section-tag">Experience</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="exp-timeline">
+
+        <div class="exp-card reveal">
+          <div class="exp-header">
+            <div class="exp-role">Data Engineer</div>
+            <div class="exp-date">Aug 2025 – Present</div>
+          </div>
+          <div class="exp-company">Symmetry Info · Interview.tw — Kaohsiung</div>
+          <ul class="exp-bullets">
+            <li>Developed <strong>LLM-based data processing workflows</strong> using prompt engineering to extract structured insights from unstructured user reviews.</li>
+            <li>Architected scalable <strong>web scraping and ETL pipelines</strong> to aggregate salary and interview data for market analysis.</li>
+            <li>Collaborated cross-functionally to clean and validate massive datasets for downstream analytics and product features.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card reveal" style="transition-delay: 0.1s">
+          <div class="exp-header">
+            <div class="exp-role">Backend Engineer</div>
+            <div class="exp-date">Feb 2022 – May 2025</div>
+          </div>
+          <div class="exp-company">ADAT Technology Co. — Tainan</div>
+          <ul class="exp-bullets">
+            <li>Built an internal <strong>ERP-like system</strong> with Django REST Framework, boosting user efficiency by <strong>30%</strong> through workflow redesign.</li>
+            <li>Achieved <strong>94% code coverage</strong> with unittest, pytest, and Selenium integration tests.</li>
+            <li>Implemented <strong>Docker + GitLab CI/CD</strong> pipeline, cutting deployment time by over <strong>50%</strong>.</li>
+            <li>Led adoption of Git flow methodology across the team despite organizational resistance.</li>
+            <li>Built <strong>n8n automated workflows</strong> for marketing and MIS, reducing manual workload by <strong>20%</strong>.</li>
+          </ul>
+        </div>
+
+        <div class="exp-card reveal" style="transition-delay: 0.2s">
+          <div class="exp-header">
+            <div class="exp-role">Web Developer</div>
+            <div class="exp-date">Dec 2019 – Jan 2022</div>
+          </div>
+          <div class="exp-company">StreetVoice — Taipei</div>
+          <ul class="exp-bullets">
+            <li>Revamped the UI of the internal <strong>"Packer"</strong> product with responsive design principles.</li>
+            <li>Built a comprehensive admin backend using <strong>Python/Django</strong> with maintainable, well-tested code.</li>
+            <li>Established Git flow, unit testing, and CI/CD pipelines to improve deployment efficiency.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="section-header reveal">
+        <span class="section-tag">Skills</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-container">
+        <div class="skill-group reveal">
+          <div class="skill-group-title">Languages & Frameworks</div>
+          <div class="tags">
+            <span class="tag tag-purple">Python</span>
+            <span class="tag tag-purple">Django</span>
+            <span class="tag tag-purple">Django REST Framework</span>
+            <span class="tag tag-purple">FastAPI</span>
+            <span class="tag tag-purple">HTML5</span>
+            <span class="tag tag-purple">CSS</span>
+            <span class="tag tag-purple">jQuery</span>
+          </div>
+        </div>
+        <div class="skill-group reveal" style="transition-delay: 0.1s">
+          <div class="skill-group-title">DevOps & Tooling</div>
+          <div class="tags">
+            <span class="tag tag-cyan">Docker</span>
+            <span class="tag tag-cyan">CI/CD</span>
+            <span class="tag tag-cyan">Git / Git Flow</span>
+            <span class="tag tag-cyan">Linux</span>
+            <span class="tag tag-cyan">GitLab</span>
+          </div>
+        </div>
+        <div class="skill-group reveal" style="transition-delay: 0.15s">
+          <div class="skill-group-title">Testing</div>
+          <div class="tags">
+            <span class="tag tag-green">pytest</span>
+            <span class="tag tag-green">unittest</span>
+            <span class="tag tag-green">Selenium</span>
+          </div>
+        </div>
+        <div class="skill-group reveal" style="transition-delay: 0.2s">
+          <div class="skill-group-title">AI & Data</div>
+          <div class="tags">
+            <span class="tag tag-violet">LLM Integration</span>
+            <span class="tag tag-violet">Prompt Engineering</span>
+            <span class="tag tag-violet">ETL Pipelines</span>
+            <span class="tag tag-violet">Web Scraping</span>
+            <span class="tag tag-violet">Data Cleaning</span>
+          </div>
+        </div>
+        <div class="skill-group reveal" style="transition-delay: 0.25s">
+          <div class="skill-group-title">Tools & Platforms</div>
+          <div class="tags">
+            <span class="tag tag-orange">n8n</span>
+            <span class="tag tag-orange">Metabase</span>
+            <span class="tag tag-orange">OpenProject</span>
+            <span class="tag tag-orange">Odoo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="section-header reveal">
+        <span class="section-tag">Education</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-icon">🎓</div>
+        <div>
+          <div class="edu-degree">Master of Science, Space Science</div>
+          <div class="edu-school">National Central University · Taoyuan, Taiwan</div>
+          <div class="edu-date">2015 – 2018</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-header reveal">
+        <span class="section-tag">Contact</span>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:b41510@gmail.com" class="contact-card reveal">
+          <div class="contact-card-icon">✉️</div>
+          <div class="contact-card-label">Email</div>
+          <div class="contact-card-value">b41510@gmail.com</div>
+        </a>
+        <a href="https://www.linkedin.com/in/will-chiang-b93789182" target="_blank" rel="noopener" class="contact-card reveal" style="transition-delay: 0.1s">
+          <div class="contact-card-icon">💼</div>
+          <div class="contact-card-label">LinkedIn</div>
+          <div class="contact-card-value">will-chiang-b93789182</div>
+        </a>
+        <div class="contact-card reveal" style="transition-delay: 0.2s">
+          <div class="contact-card-icon">📍</div>
+          <div class="contact-card-label">Location</div>
+          <div class="contact-card-value">Kaohsiung, Taiwan</div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    Built with ♥ by <span>Will Chiang</span> · © 2026
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
