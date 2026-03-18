@@ -4,336 +4,407 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Will Chiang — Backend & Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- Background -->
-  <canvas id="canvas-bg"></canvas>
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
-
-  <!-- Nav -->
-  <nav id="navbar">
-    <div class="nav-logo">WC.</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <div class="wrapper">
-
-    <!-- Hero -->
-    <section id="hero">
-      <div class="hero-inner">
-        <div class="hero-badge">
-          <span class="dot"></span>
-          Available for opportunities
-        </div>
-        <h1>
-          <span class="hero-name-gradient">Will Chiang</span>
-          <span class="hero-typewriter" id="typewriter"><span class="cursor"></span></span>
-        </h1>
-        <p class="hero-desc">
-          Python/Django specialist building scalable backend systems, data pipelines,
-          and LLM-powered workflows. 6+ years turning complex problems into clean code.
-        </p>
-        <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.6 3.45 2 2 0 0 1 3.57 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.54a16 16 0 0 0 6.29 6.29l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            Get in touch
-          </a>
-          <a href="https://www.linkedin.com/in/will-chiang-b93789182" target="_blank" class="btn btn-ghost">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            LinkedIn
-          </a>
-        </div>
-        <div class="hero-scroll">
-          <div class="scroll-line"></div>
-          Scroll to explore
-        </div>
-      </div>
-    </section>
-
-    <!-- About -->
-    <section id="about">
-      <div class="section-header reveal">
-        <span class="section-tag">About</span>
-        <div class="section-line"></div>
-      </div>
-      <div class="about-grid">
-        <div class="about-card reveal">
-          <div class="about-card-icon">👋</div>
-          <div class="about-card-title">Who I am</div>
-          <p>
-            Backend engineer with a background in <strong>Space Science</strong> — which means I'm comfortable
-            with both ambiguous data and precise engineering. I specialize in <strong>Python/Django systems</strong>
-            and have been bridging traditional backend work with <strong>AI/LLM integration</strong> since before it was trendy.
-          </p>
-        </div>
-        <div class="about-card reveal" style="transition-delay: 0.1s">
-          <div class="about-card-icon">⚙️</div>
-          <div class="about-card-title">Backend & DevOps</div>
-          <p>
-            From building <strong>ERP-like systems</strong> with DRF to setting up
-            <strong>Docker + CI/CD pipelines</strong> that cut deployment time in half.
-            I care about code quality, testing, and systems that actually stay up.
-          </p>
-        </div>
-        <div class="about-card reveal" style="transition-delay: 0.2s">
-          <div class="about-card-icon">🤖</div>
-          <div class="about-card-title">AI & Data</div>
-          <p>
-            Currently architecting <strong>ETL pipelines</strong> and
-            <strong>LLM-powered workflows</strong> at Interview.tw — turning messy
-            unstructured data into structured insights at scale using prompt engineering.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section id="experience">
-      <div class="section-header reveal">
-        <span class="section-tag">Experience</span>
-        <div class="section-line"></div>
-      </div>
-      <div class="exp-timeline">
-
-        <div class="exp-card reveal">
-          <div class="exp-header">
-            <div class="exp-role">Data Engineer</div>
-            <div class="exp-date">Aug 2025 – Present</div>
-          </div>
-          <div class="exp-company">Symmetry Info · Interview.tw — Kaohsiung</div>
-          <ul class="exp-bullets">
-            <li>Developed <strong>LLM-based data processing workflows</strong> using prompt engineering to extract structured insights from unstructured user reviews.</li>
-            <li>Architected scalable <strong>web scraping and ETL pipelines</strong> to aggregate salary and interview data for market analysis.</li>
-            <li>Collaborated cross-functionally to clean and validate massive datasets for downstream analytics and product features.</li>
-          </ul>
-        </div>
-
-        <div class="exp-card reveal" style="transition-delay: 0.1s">
-          <div class="exp-header">
-            <div class="exp-role">Backend Engineer</div>
-            <div class="exp-date">Feb 2022 – May 2025</div>
-          </div>
-          <div class="exp-company">ADAT Technology Co. — Tainan</div>
-          <ul class="exp-bullets">
-            <li>Built an internal <strong>ERP-like system</strong> with Django REST Framework, boosting user efficiency by <strong>30%</strong> through workflow redesign.</li>
-            <li>Achieved <strong>94% code coverage</strong> with unittest, pytest, and Selenium integration tests.</li>
-            <li>Implemented <strong>Docker + GitLab CI/CD</strong> pipeline, cutting deployment time by over <strong>50%</strong>.</li>
-            <li>Led adoption of Git flow methodology across the team despite organizational resistance.</li>
-            <li>Built <strong>n8n automated workflows</strong> for marketing and MIS, reducing manual workload by <strong>20%</strong>.</li>
-          </ul>
-        </div>
-
-        <div class="exp-card reveal" style="transition-delay: 0.2s">
-          <div class="exp-header">
-            <div class="exp-role">Web Developer</div>
-            <div class="exp-date">Dec 2019 – Jan 2022</div>
-          </div>
-          <div class="exp-company">StreetVoice — Taipei</div>
-          <ul class="exp-bullets">
-            <li>Revamped the UI of the internal <strong>"Packer"</strong> product with responsive design principles.</li>
-            <li>Built a comprehensive admin backend using <strong>Python/Django</strong> with maintainable, well-tested code.</li>
-            <li>Established Git flow, unit testing, and CI/CD pipelines to improve deployment efficiency.</li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-      <div class="section-header reveal">
-        <span class="section-tag">Projects</span>
-        <div class="section-line"></div>
-      </div>
-      <div class="projects-grid">
-
-        <div class="project-card reveal">
-          <div class="project-header">
-            <div>
-              <div class="project-title">FitCheck</div>
-              <div class="project-desc">
-                AI-powered job search assistant — upload your resume, paste a JD,
-                and get a semantic match score, skill gap analysis, and AI-generated
-                cover letters in both Traditional Chinese and English.
-              </div>
-            </div>
-            <a href="https://github.com/chiangwill/fitcheck" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
-          <div class="project-tags">
-            <span class="tag tag-purple">FastAPI</span>
-            <span class="tag tag-purple">NiceGUI</span>
-            <span class="tag tag-cyan">PostgreSQL</span>
-            <span class="tag tag-cyan">Docker</span>
-            <span class="tag tag-violet">ChromaDB</span>
-            <span class="tag tag-violet">Gemini API</span>
-            <span class="tag tag-orange">RAG</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal" style="transition-delay: 0.1s">
-          <div class="project-header">
-            <div>
-              <div class="project-title">Japan Python Job Crawler</div>
-              <div class="project-desc">
-                Automated crawler that scrapes Python job listings in Japan (with visa sponsorship)
-                from Japan Dev and Tokyo Dev, deduplicates against a Supabase database, and sends
-                Discord notifications for new positions — runs daily at 10:00 JST via GitHub Actions.
-              </div>
-            </div>
-            <a href="https://github.com/chiangwill/jp_job_crawler" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
-          <div class="project-tags">
-            <span class="tag tag-purple">Python</span>
-            <span class="tag tag-cyan">Supabase</span>
-            <span class="tag tag-cyan">GitHub Actions</span>
-            <span class="tag tag-orange">Discord Webhook</span>
-            <span class="tag tag-green">Web Scraping</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal" style="transition-delay: 0.3s">
-          <div class="project-header">
-            <div>
-              <div class="project-title">LeetCode → Notion Sync</div>
-              <div class="project-desc">
-                Arc Browser extension that automatically detects successful LeetCode
-                submissions and pushes problem metadata — title, difficulty, topic tags —
-                to Notion via an n8n webhook. No more manual logging.
-              </div>
-            </div>
-            <a href="https://github.com/chiangwill/arc_boost_for_leetcode_info" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            </a>
-          </div>
-          <div class="project-tags">
-            <span class="tag tag-purple">JavaScript</span>
-            <span class="tag tag-cyan">Arc Browser</span>
-            <span class="tag tag-orange">n8n</span>
-            <span class="tag tag-green">Notion API</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-      <div class="section-header reveal">
-        <span class="section-tag">Skills</span>
-        <div class="section-line"></div>
-      </div>
-      <div class="skills-container">
-        <div class="skill-group reveal">
-          <div class="skill-group-title">Languages & Frameworks</div>
-          <div class="tags">
-            <span class="tag tag-purple">Python</span>
-            <span class="tag tag-purple">Django</span>
-            <span class="tag tag-purple">Django REST Framework</span>
-            <span class="tag tag-purple">FastAPI</span>
-            <span class="tag tag-purple">HTML5</span>
-            <span class="tag tag-purple">CSS</span>
-            <span class="tag tag-purple">jQuery</span>
-          </div>
-        </div>
-        <div class="skill-group reveal" style="transition-delay: 0.1s">
-          <div class="skill-group-title">DevOps & Tooling</div>
-          <div class="tags">
-            <span class="tag tag-cyan">Docker</span>
-            <span class="tag tag-cyan">CI/CD</span>
-            <span class="tag tag-cyan">Git / Git Flow</span>
-            <span class="tag tag-cyan">Linux</span>
-            <span class="tag tag-cyan">GitLab</span>
-          </div>
-        </div>
-        <div class="skill-group reveal" style="transition-delay: 0.15s">
-          <div class="skill-group-title">Testing</div>
-          <div class="tags">
-            <span class="tag tag-green">pytest</span>
-            <span class="tag tag-green">unittest</span>
-            <span class="tag tag-green">Selenium</span>
-          </div>
-        </div>
-        <div class="skill-group reveal" style="transition-delay: 0.2s">
-          <div class="skill-group-title">AI & Data</div>
-          <div class="tags">
-            <span class="tag tag-violet">LLM Integration</span>
-            <span class="tag tag-violet">Prompt Engineering</span>
-            <span class="tag tag-violet">ETL Pipelines</span>
-            <span class="tag tag-violet">Web Scraping</span>
-            <span class="tag tag-violet">Data Cleaning</span>
-          </div>
-        </div>
-        <div class="skill-group reveal" style="transition-delay: 0.25s">
-          <div class="skill-group-title">Tools & Platforms</div>
-          <div class="tags">
-            <span class="tag tag-orange">n8n</span>
-            <span class="tag tag-orange">Metabase</span>
-            <span class="tag tag-orange">OpenProject</span>
-            <span class="tag tag-orange">Odoo</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section id="education">
-      <div class="section-header reveal">
-        <span class="section-tag">Education</span>
-        <div class="section-line"></div>
-      </div>
-      <div class="edu-card reveal">
-        <div class="edu-icon">🎓</div>
-        <div>
-          <div class="edu-degree">Master of Science, Space Science</div>
-          <div class="edu-school">National Central University · Taoyuan, Taiwan</div>
-          <div class="edu-date">2015 – 2018</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-      <div class="section-header reveal">
-        <span class="section-tag">Contact</span>
-        <div class="section-line"></div>
-      </div>
-      <div class="contact-grid">
-        <a href="mailto:b41510@gmail.com" class="contact-card reveal">
-          <div class="contact-card-icon">✉️</div>
-          <div class="contact-card-label">Email</div>
-          <div class="contact-card-value">b41510@gmail.com</div>
-        </a>
-        <a href="https://www.linkedin.com/in/will-chiang-b93789182" target="_blank" rel="noopener" class="contact-card reveal" style="transition-delay: 0.1s">
-          <div class="contact-card-icon">💼</div>
-          <div class="contact-card-label">LinkedIn</div>
-          <div class="contact-card-value">will-chiang-b93789182</div>
-        </a>
-        <div class="contact-card reveal" style="transition-delay: 0.2s">
-          <div class="contact-card-icon">📍</div>
-          <div class="contact-card-label">Location</div>
-          <div class="contact-card-value">Kaohsiung, Taiwan</div>
-        </div>
-      </div>
-    </section>
-
+  <!-- Boot Screen -->
+  <div id="boot-screen">
+    <div id="boot-lines"></div>
+    <div id="boot-skip">press any key to skip</div>
   </div>
 
-  <footer>
-    Built with ♥ by <span>Will Chiang</span> · © 2026
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <div class="nav-left">
+        <div class="nav-dots">
+          <span class="ndot ndot-red"></span>
+          <span class="ndot ndot-yellow"></span>
+          <span class="ndot ndot-green"></span>
+        </div>
+        <span class="nav-title">will@portfolio — zsh</span>
+      </div>
+      <div class="nav-links">
+        <a href="#about">about</a>
+        <a href="#experience">exp</a>
+        <a href="#projects">projects</a>
+        <a href="#skills">skills</a>
+        <a href="#contact">contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Terminal Window -->
+  <main id="terminal">
+
+    <!-- Title Bar -->
+    <div class="titlebar">
+      <div class="tb-dots">
+        <span class="dot dot-red"></span>
+        <span class="dot dot-yellow"></span>
+        <span class="dot dot-green"></span>
+      </div>
+      <div class="tb-title">will@portfolio — zsh — 120×40</div>
+      <div class="tb-right"></div>
+    </div>
+
+    <!-- Terminal Body -->
+    <div id="tbody">
+
+      <div class="login-msg">Last login: <span id="last-login"></span> on ttys001</div>
+
+      <!-- ── HERO ── -->
+      <section id="hero" class="tsec">
+        <div class="prompt-line">
+          <div class="prompt">
+            <span class="seg seg-ctx"> will </span>
+            <span class="seg-arrow arrow-ctx"></span>
+            <span class="seg seg-dir"> ~ </span>
+            <span class="seg-arrow arrow-dir"></span>
+            <span class="seg seg-git">  main </span>
+            <span class="seg-arrow arrow-git"></span>
+            <span class="pchar">❯</span>
+          </div>
+          <span class="cmd">./welcome.sh</span>
+        </div>
+        <div class="output reveal">
+          <div class="welcome-name">Will Chiang</div>
+          <div class="welcome-role">Backend &amp; Data Engineer</div>
+          <div class="welcome-rule">────────────────────────────────────────────</div>
+          <div class="welcome-desc">
+            Python/Django specialist building scalable backend systems,<br>
+            data pipelines, and LLM-powered workflows.<br>
+            6+ years turning complex problems into clean code.
+          </div>
+          <div class="welcome-stats">
+            <div class="wstat"><span class="wk">● status  </span><span class="wv wv-green">Available for opportunities</span></div>
+            <div class="wstat"><span class="wk">● location</span><span class="wv">Kaohsiung, Taiwan</span></div>
+            <div class="wstat"><span class="wk">● current </span><span class="wv wv-cyan">Data Engineer @ Interview.tw</span></div>
+            <div class="wstat"><span class="wk">● contact </span><span class="wv"><a href="mailto:b41510@gmail.com">b41510@gmail.com</a></span></div>
+          </div>
+          <div class="welcome-hint">Type <span class="hl-yellow">help</span> below to explore interactively, or scroll down ↓</div>
+        </div>
+      </section>
+
+      <!-- ── ABOUT ── -->
+      <section id="about" class="tsec">
+        <div class="prompt-line">
+          <div class="prompt">
+            <span class="seg seg-ctx"> will </span>
+            <span class="seg-arrow arrow-ctx"></span>
+            <span class="seg seg-dir"> ~/about </span>
+            <span class="seg-arrow arrow-dir"></span>
+            <span class="seg seg-git">  main </span>
+            <span class="seg-arrow arrow-git"></span>
+            <span class="pchar">❯</span>
+          </div>
+          <span class="cmd">cat README.md</span>
+        </div>
+        <div class="output reveal">
+          <div class="md-h1"># About</div>
+          <p>Backend engineer with a background in <span class="hl-purple">Space Science</span> — which means I'm
+          comfortable with both ambiguous data and precise engineering.</p>
+          <p>I specialize in <span class="hl-cyan">Python/Django systems</span> and have been bridging
+          traditional backend work with <span class="hl-green">AI/LLM integration</span> since before it was trendy.</p>
+          <div class="md-h2">## Background</div>
+          <div class="mli"><span class="mli-b">▸</span> MSc Space Science, National Central University (2015–2018)</div>
+          <div class="mli"><span class="mli-b">▸</span> 6+ years professional backend development</div>
+          <div class="mli"><span class="mli-b">▸</span> Strong opinions on testing, CI/CD, and code quality</div>
+          <div class="mli"><span class="mli-b">▸</span> Currently exploring LLM-powered data workflows</div>
+        </div>
+      </section>
+
+      <!-- ── EXPERIENCE ── -->
+      <section id="experience" class="tsec">
+        <div class="prompt-line">
+          <div class="prompt">
+            <span class="seg seg-ctx"> will </span>
+            <span class="seg-arrow arrow-ctx"></span>
+            <span class="seg seg-dir"> ~/experience </span>
+            <span class="seg-arrow arrow-dir"></span>
+            <span class="seg seg-git">  main </span>
+            <span class="seg-arrow arrow-git"></span>
+            <span class="pchar">❯</span>
+          </div>
+          <span class="cmd">ls -la</span>
+        </div>
+        <div class="output reveal">
+          <div class="ls-header">total 3</div>
+          <div class="ls-row">
+            <span class="ls-perm">drwxr-xr-x</span>
+            <span class="ls-name ls-dir">symmetry-info/</span>
+            <span class="ls-date">Aug 2025 – Present</span>
+          </div>
+          <div class="ls-row">
+            <span class="ls-perm">drwxr-xr-x</span>
+            <span class="ls-name ls-dir">adat-technology/</span>
+            <span class="ls-date">Feb 2022 – May 2025</span>
+          </div>
+          <div class="ls-row">
+            <span class="ls-perm">drwxr-xr-x</span>
+            <span class="ls-name ls-dir">streetvoice/</span>
+            <span class="ls-date">Dec 2019 – Jan 2022</span>
+          </div>
+        </div>
+
+        <!-- Symmetry Info -->
+        <div class="prompt-line prompt-cont">
+          <div class="prompt">
+            <span class="seg seg-ctx"> will </span>
+            <span class="seg-arrow arrow-ctx"></span>
+            <span class="seg seg-dir"> ~/experience </span>
+            <span class="seg-arrow arrow-dir"></span>
+            <span class="seg seg-git">  main </span>
+            <span class="seg-arrow arrow-git"></span>
+            <span class="pchar">❯</span>
+          </div>
+          <span class="cmd">cat symmetry-info/role.md</span>
+        </div>
+        <div class="output reveal">
+          <div class="exp-header">
+            <span class="exp-title">Data Engineer</span>
+            <span class="exp-sep">@</span>
+            <span class="exp-company">Symmetry Info · Interview.tw</span>
+            <span class="exp-period">Aug 2025 – Present</span>
+          </div>
+          <div class="exp-body">
+            <div class="exp-li"><span class="eli-sym">+</span> Developed <span class="hl-cyan">LLM-based data processing workflows</span> using prompt engineering to extract structured insights from unstructured user reviews.</div>
+            <div class="exp-li"><span class="eli-sym">+</span> Architected scalable <span class="hl-green">web scraping and ETL pipelines</span> to aggregate salary and interview data for market analysis.</div>
+            <div class="exp-li"><span class="eli-sym">+</span> Collaborated cross-functionally to clean and validate massive datasets for downstream analytics and product features.</div>
+          </div>
+        </div>
+
+        <!-- ADAT -->
+        <div class="prompt-line prompt-cont">
+          <div class="prompt">
+            <span class="seg seg-ctx"> will </span>
+            <span class="seg-arrow arrow-ctx"></span>
+            <span class="seg seg-dir"> ~/experience </span>
+            <span class="seg-arrow arrow-dir"></span>
+            <span class="seg seg-git">  main </span>
+            <span class="seg-arrow arrow-git"></span>
+            <span class="pchar">❯</span>
+          </div>
+          <span class="cmd">cat adat-technology/role.md</span>
+        </div>
+        <div class="output reveal">
+          <div class="exp-header">
+            <span class="exp-title">Backend Engineer</span>
+            <span class="exp-sep">@</span>
+            <span class="exp-company">ADAT Technology Co.</span>
+            <span class="exp-period">Feb 2022 – May 2025</span>
+          </div>
+          <div class="exp-body">
+            <div class="exp-li"><span class="eli-sym">+</span> Built an internal <span class="hl-cyan">ERP-like system</span> with Django REST Framework, boosting user efficiency by <span class="hl-yellow">30%</span>.</div>
+            <div class="exp-li"><span class="eli-sym">+</span> Achieved <span class="hl-yellow">94% code coverage</span> with unittest, pytest, and Selenium integration tests.</div>
+            <div class="exp-li"><span class="eli-sym">+</span> Implemented <span class="hl-green">Docker + GitLab CI/CD</span> pipeline, cutting deployment time by over <span class="hl-yellow">50%</span>.</div>
+            <div class="exp-li"><span class="eli-sym">+</span> Led adoption of Git flow methodology across the team despite organizational resistance.</div>
+            <div class="exp-li"><span class="eli-sym">+</span> Built <span class="hl-orange">n8n automated workflows</span> for marketing and MIS, reducing manual workload by <span class="hl-yellow">20%</span>.</div>
+          </div>
+        </div>
+
+        <!-- StreetVoice -->
+        <div class="prompt-line prompt-cont">
+          <div class="prompt">
+            <span class="seg seg-ctx"> will </span>
+            <span class="seg-arrow arrow-ctx"></span>
+            <span class="seg seg-dir"> ~/experience </span>
+            <span class="seg-arrow arrow-dir"></span>
+            <span class="seg seg-git">  main </span>
+            <span class="seg-arrow arrow-git"></span>
+            <span class="pchar">❯</span>
+          </div>
+          <span class="cmd">cat streetvoice/role.md</span>
+        </div>
+        <div class="output reveal">
+          <div class="exp-header">
+            <span class="exp-title">Web Developer</span>
+            <span class="exp-sep">@</span>
+            <span class="exp-company">StreetVoice</span>
+            <span class="exp-period">Dec 2019 – Jan 2022</span>
+          </div>
+          <div class="exp-body">
+            <div class="exp-li"><span class="eli-sym">+</span> Revamped the UI of the internal "Packer" product with responsive design principles.</div>
+            <div class="exp-li"><span class="eli-sym">+</span> Built a comprehensive admin backend using <span class="hl-cyan">Python/Django</span> with maintainable, well-tested code.</div>
+            <div class="exp-li"><span class="eli-sym">+</span> Established Git flow, unit testing, and CI/CD pipelines to improve deployment efficiency.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── PROJECTS ── -->
+      <section id="projects" class="tsec">
+        <div class="prompt-line">
+          <div class="prompt">
+            <span class="seg seg-ctx"> will </span>
+            <span class="seg-arrow arrow-ctx"></span>
+            <span class="seg seg-dir"> ~/projects </span>
+            <span class="seg-arrow arrow-dir"></span>
+            <span class="seg seg-git">  main </span>
+            <span class="seg-arrow arrow-git"></span>
+            <span class="pchar">❯</span>
+          </div>
+          <span class="cmd">ls -la</span>
+        </div>
+        <div class="output reveal">
+
+          <div class="proj-entry">
+            <div class="proj-row">
+              <span class="ls-perm">-rwxr-xr-x</span>
+              <a href="https://github.com/chiangwill/fitcheck" target="_blank" rel="noopener" class="proj-name">fitcheck/</a>
+            </div>
+            <div class="proj-desc">AI-powered job search assistant — upload your resume, paste a JD, and get a semantic match score, skill gap analysis, and AI-generated cover letters in both Traditional Chinese and English.</div>
+            <div class="proj-tags">
+              <span class="ptag ptag-purple">FastAPI</span>
+              <span class="ptag ptag-purple">NiceGUI</span>
+              <span class="ptag ptag-cyan">PostgreSQL</span>
+              <span class="ptag ptag-cyan">Docker</span>
+              <span class="ptag ptag-blue">ChromaDB</span>
+              <span class="ptag ptag-blue">Gemini API</span>
+              <span class="ptag ptag-orange">RAG</span>
+            </div>
+          </div>
+
+          <div class="proj-entry">
+            <div class="proj-row">
+              <span class="ls-perm">-rwxr-xr-x</span>
+              <a href="https://github.com/chiangwill/jp_job_crawler" target="_blank" rel="noopener" class="proj-name">jp_job_crawler/</a>
+            </div>
+            <div class="proj-desc">Automated crawler that scrapes Python job listings in Japan with visa sponsorship, deduplicates against Supabase, and sends Discord notifications — runs daily at 10:00 JST via GitHub Actions.</div>
+            <div class="proj-tags">
+              <span class="ptag ptag-purple">Python</span>
+              <span class="ptag ptag-cyan">Supabase</span>
+              <span class="ptag ptag-cyan">GitHub Actions</span>
+              <span class="ptag ptag-orange">Discord Webhook</span>
+              <span class="ptag ptag-green">Web Scraping</span>
+            </div>
+          </div>
+
+          <div class="proj-entry">
+            <div class="proj-row">
+              <span class="ls-perm">-rwxr-xr-x</span>
+              <a href="https://github.com/chiangwill/arc_boost_for_leetcode_info" target="_blank" rel="noopener" class="proj-name">arc_boost_leetcode/</a>
+            </div>
+            <div class="proj-desc">Arc Browser extension that automatically detects successful LeetCode submissions and pushes problem metadata to Notion via an n8n webhook. No more manual logging.</div>
+            <div class="proj-tags">
+              <span class="ptag ptag-purple">JavaScript</span>
+              <span class="ptag ptag-cyan">Arc Browser</span>
+              <span class="ptag ptag-orange">n8n</span>
+              <span class="ptag ptag-green">Notion API</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ── SKILLS ── -->
+      <section id="skills" class="tsec">
+        <div class="prompt-line">
+          <div class="prompt">
+            <span class="seg seg-ctx"> will </span>
+            <span class="seg-arrow arrow-ctx"></span>
+            <span class="seg seg-dir"> ~/skills </span>
+            <span class="seg-arrow arrow-dir"></span>
+            <span class="seg seg-git">  main </span>
+            <span class="seg-arrow arrow-git"></span>
+            <span class="pchar">❯</span>
+          </div>
+          <span class="cmd">cat skills.json | python3 -m json.tool</span>
+        </div>
+        <div class="output reveal">
+          <div class="json-out">
+            <span class="jb">{</span>
+            <div class="jblock">
+              <span class="jk">"languages_frameworks"</span><span class="jc">:</span> <span class="jbr">[</span>
+              <div class="jarr"><span class="js">"Python"</span>, <span class="js">"Django"</span>, <span class="js">"Django REST Framework"</span>, <span class="js">"FastAPI"</span>, <span class="js">"HTML5"</span>, <span class="js">"CSS"</span>, <span class="js">"jQuery"</span></div>
+              <span class="jbr">]</span>,
+            </div>
+            <div class="jblock">
+              <span class="jk">"devops_tooling"</span><span class="jc">:</span> <span class="jbr">[</span>
+              <div class="jarr"><span class="js">"Docker"</span>, <span class="js">"CI/CD"</span>, <span class="js">"Git / Git Flow"</span>, <span class="js">"Linux"</span>, <span class="js">"GitLab"</span></div>
+              <span class="jbr">]</span>,
+            </div>
+            <div class="jblock">
+              <span class="jk">"testing"</span><span class="jc">:</span> <span class="jbr">[</span>
+              <div class="jarr"><span class="js">"pytest"</span>, <span class="js">"unittest"</span>, <span class="js">"Selenium"</span></div>
+              <span class="jbr">]</span>,
+            </div>
+            <div class="jblock">
+              <span class="jk">"ai_data"</span><span class="jc">:</span> <span class="jbr">[</span>
+              <div class="jarr"><span class="js">"LLM Integration"</span>, <span class="js">"Prompt Engineering"</span>, <span class="js">"ETL Pipelines"</span>, <span class="js">"Web Scraping"</span>, <span class="js">"Data Cleaning"</span></div>
+              <span class="jbr">]</span>,
+            </div>
+            <div class="jblock">
+              <span class="jk">"tools_platforms"</span><span class="jc">:</span> <span class="jbr">[</span>
+              <div class="jarr"><span class="js">"n8n"</span>, <span class="js">"Metabase"</span>, <span class="js">"OpenProject"</span>, <span class="js">"Odoo"</span></div>
+              <span class="jbr">]</span>
+            </div>
+            <span class="jb">}</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CONTACT ── -->
+      <section id="contact" class="tsec">
+        <div class="prompt-line">
+          <div class="prompt">
+            <span class="seg seg-ctx"> will </span>
+            <span class="seg-arrow arrow-ctx"></span>
+            <span class="seg seg-dir"> ~/contact </span>
+            <span class="seg-arrow arrow-dir"></span>
+            <span class="seg seg-git">  main </span>
+            <span class="seg-arrow arrow-git"></span>
+            <span class="pchar">❯</span>
+          </div>
+          <span class="cmd">cat contact.md</span>
+        </div>
+        <div class="output reveal">
+          <div class="contact-row">
+            <span class="ct-icon hl-orange">✉</span>
+            <span class="ct-label">email</span>
+            <a href="mailto:b41510@gmail.com" class="ct-val">b41510@gmail.com</a>
+          </div>
+          <div class="contact-row">
+            <span class="ct-icon hl-blue">in</span>
+            <span class="ct-label">linkedin</span>
+            <a href="https://www.linkedin.com/in/will-chiang-b93789182" target="_blank" rel="noopener" class="ct-val">will-chiang-b93789182</a>
+          </div>
+          <div class="contact-row">
+            <span class="ct-icon hl-purple">⌂</span>
+            <span class="ct-label">location</span>
+            <span class="ct-val">Kaohsiung, Taiwan</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── INTERACTIVE TERMINAL ── -->
+      <section id="interactive" class="tsec">
+        <div id="iout"></div>
+        <div class="prompt-line" id="iline">
+          <div class="prompt">
+            <span class="seg seg-ctx"> will </span>
+            <span class="seg-arrow arrow-ctx"></span>
+            <span class="seg seg-dir" id="idir"> ~ </span>
+            <span class="seg-arrow arrow-dir"></span>
+            <span class="seg seg-git">  main </span>
+            <span class="seg-arrow arrow-git"></span>
+            <span class="pchar">❯</span>
+          </div>
+          <input type="text" id="tinput"
+            autocomplete="off" autocorrect="off"
+            autocapitalize="off" spellcheck="false"
+            placeholder="type a command..." />
+        </div>
+      </section>
+
+    </div><!-- /tbody -->
+  </main>
+
+  <footer id="footer">
+    <span class="ft-dim">built with</span> <span class="ft-red">♥</span> <span class="ft-dim">by</span> <span class="ft-name">Will Chiang</span> <span class="ft-dim">· © 2026</span>
   </footer>
 
   <script src="main.js"></script>
